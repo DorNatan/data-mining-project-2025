@@ -1,21 +1,30 @@
 # data-mining-project-2025
-This repository contains the complete implementation of a data mining project conducted as part of the 2024 course curriculum. The goal of this project is to demonstrate an end-to-end data science pipeline, including preprocessing, classification, and unsupervised analysis. The project uses a unique dataset obtained from info.data.gov.il.
+
+This repository showcases a complete data mining workflow. The project was originally created for the 2024 course curriculum and demonstrates an end-to-end machine learning pipeline. All experiments are contained in a single Jupyter notebook and the raw data is provided as a CSV file.
 
 ## Objectives
-Build a comprehensive classification pipeline:
-Data preprocessing.
-Feature engineering.
-Model training, evaluation, and interpretation.
-Perform unsupervised analysis:
-Clustering.
-Anomaly detection or recommendation system.
+- Build a supervised classification pipeline (preprocessing, feature engineering, model selection, and evaluation).
+- Perform unsupervised analysis for clustering and anomaly detection.
 
 ## Dataset
-Source: info.data.gov.il
-Description: The dataset contains information about bonds, including issuance details, maturity terms, coupon rates, prices, and quantities.
-Key Features:
-BONDS: The type of bond (target for classification).
-COUPON: Coupon rate.
-PURCHASEDQUANTITY: Quantity purchased.
-AVERAGEPRICE and CUTOFFPRICE: Price indicators.
-ACTUALTERMTOMATURITY: Actual time to maturity.
+The data comes from [info.data.gov.il](https://info.data.gov.il/) and includes bond issuance information such as coupon rates, purchase quantities, and maturity dates. It is stored in `bonds.csv` in this repository.
+
+Key columns include:
+- **BONDS** – bond type (classification target).
+- **COUPON** – coupon rate.
+- **PURCHASEDQUANTITY** – quantity purchased.
+- **AVERAGEPRICE** and **CUTOFFPRICE** – pricing information.
+- **ACTUALTERMTOMATURITY** – time to maturity.
+
+## Usage
+Install the packages listed in `requirements.txt` and open the notebook `Data Mining Supervised & Unsupervised 2025.ipynb` to run the analysis:
+```bash
+pip install -r requirements.txt
+jupyter notebook Data\ Mining\ Supervised\ \&\ Unsupervised\ 2025.ipynb
+```
+
+## Repository Structure
+- `bonds.csv` – raw dataset used in the notebook.
+- `Data Mining Supervised & Unsupervised 2025.ipynb` – Jupyter notebook containing all code and analysis.
+- `requirements.txt` – list of Python packages required to run the notebook.
+
